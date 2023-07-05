@@ -23,7 +23,7 @@ function generateTicket() {                                             // Эт�
 
   let date = new Date(Number(selectSeanse.seanceTimeStamp * 1000));                                              // Создаем объект даты на основе временной метки сеанса
   let dateStr = date.toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });          // Форматируем дату в строку в формате "день.месяц.год"
-  let textQR =`                                                                                                // Создаем текст для QR-кода, содержащий информацию о билете
+  let textQR =`                                                                                                
   Фильм: ${selectSeanse.filmName}
   Зал: ${selectSeanse.hallName}
   Ряд/Место ${places}

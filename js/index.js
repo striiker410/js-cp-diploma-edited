@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let markTimeSeanceDay = Number(movieSeance.dataset.seanceStart) * 60;
         let markTimeSeance = markTimeDay + markTimeSeanceDay;
         let markTimeNow = Math.trunc(+new Date() / 1000);
-        movieSeance.dataset.seancemarkTime = markTimeSeance;
+        movieSeance.dataset.seanceTimeStamp = markTimeSeance;                                                   // 05.07.2023  Исправлена ошибка (seanceTimeStamp в строке movieSeance.dataset.seanceTimeStamp = markTimeSeance);
       
         if ((markTimeSeance - markTimeNow) > 0) {                                                               // Проверяем условие (markTimeSeance - markTimeNow) > 0 с помощью оператора if
           movieSeance.classList.remove('acceptin-button-disabled');
